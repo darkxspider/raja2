@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Learing CSS</title>
+    </head>
+    <style>
+        body {
+            background-color:aquamarine;
+        }
+        fieldset {
+            background-color:bisque;
+        }
+    </style>
+    <body>
+        <form>
+            <h1>
+                 Internship Apply Form
+            </h1>
+            <fieldset>
+                <legend>Name</legend>
+            <label for="fname">First Name:</label>
+            <input id="fname" name="fname" type="text"><br>
+            <label for="mname">Middle Name:</label>
+            <input id="mname" name="mname" type="text"><br>
+            <label for="lname">Last Nmae:</label>
+            <input type="text" name="lname" id="lname"><br>
+            <label for="father name">Father's Name:</label>
+            <input type="text" name="father name" id="father name"><br>
+            <label for="mother name">Mother's Name:</label>
+            <input id="mother name" name="mother name" type="text"><br>
+            <label for="Date Of Birth">Date Of Birth:</label>
+            <input type="datetime-local" name="Date Of Birth" id="Date Of Birth"><br>
+            </fieldset>
+            <h2>
+                Select Your Domain
+            </h2>
+            <fieldset>
+            <select>
+                <optgroup label="frontend">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>Javascript</option>
+                <option>physics</option>
+                <option>chemistry</option>
+            </optgroup>
+            <optgroup label="backend">
+                <option>Express</option>
+                <option>Node js</option>
+            </optgroup>
+            </select><br>
+            <textarea rows="10" cols="50">type Something.....</textarea><br>
+        </fieldset>
+        <h3>
+            Your Personal Details
+        </h3>
+        <fieldset>
+            <label for="fav lang">Fav language:</label>
+            <input list="data" id="fav-lang">
+            <datalist id="data">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>Javascript</option>
+                <option>Express</option>
+                <option>Nodejs</option>
+            </datalist><br>
+            <label for="photo">Add Your Photo;</label>
+            <input type="file" id="photo" name="photo"><br>
+            <label for="adhar number">Adhar Number:</label>
+            <input type="number" id="adhar number" name="adhar number"><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br>
+        <label for="payment method">Payment Method</label>
+        <input list="payment" id="payment method">
+        <datalist id="payment">
+            <option>Phone Pay</option>
+            <option>Paytm</option>
+            <option>Google Pay</option>
+            <option>other</option>
+        </datalist><br>
+    </fieldset>
+            <button>Submt</button>
+            <button>Reset</button>
+        </form>
+    </body>
+</html>
